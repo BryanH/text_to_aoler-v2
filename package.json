@@ -1,0 +1,8 @@
+{
+  "name": "Aol Translate",
+  "packageManager": "yarn@4.9.2",
+  "author": [],
+  "dependencies": {
+    "mermaid": "^11.12.2"
+  }
+}

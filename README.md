@@ -1,10 +1,12 @@
-# English to 12-Year-Old AOLer Script 😜
+# Text to 12 year-old  AOLer Script
 
-A fun, nostalgia-driven JavaScript toy that takes ordinary text and converts it into something that looks like it was typed by a 12-year-old AOL user sometime around 1998.
+Fun Script to take ordinary text and convert it to how a 12 year-old AOLer would write.
 
-Think AIM chats, random capitalization, excessive punctuation, and just a little bit of chaos.
+**Version:** 2.0.0
+## Authors:
 
----
+* Lucas Longley (llongley@uvic.ca),
+* BryanH (bryan@master-developer.com)
 
 <a id="why-this-exists"></a>
 ## Why This Exists
@@ -70,41 +72,22 @@ Each acronym (`OMG`, `WTF`, `LOL`) runs this logic independently.
 <a id="usage"></a>
 ## Usage
 
-This script is designed to run **in a web browser**.
+This runs on a web browser. You will need two `textbox` elements and one `button` or `a`-link to trigger the script.
 
-You will need:
+### Sample frontend code
 
-- One text area for input
-- One text area for output
-- A button (or link) to trigger the translation
+Your code can be any usable configuration as long as the element names are correct and the trigger calls:
+`onclick="translateText(document.translate.translatethis.value)"`
 
 <a id="sample-html"></a>
 ### Sample HTML
 
 ```html
 <form id="translate" name="translate">
-  <p>
-    <textarea
-      style="width:100%"
-      name="translatethis"
-      rows="15"
-      wrap="logical"></textarea>
-
-    <input
-      type="button"
-      value="Translate!"
-      onclick="document.translate.translated.value =
-               translateAolSpeak2(document.translate.translatethis.value)">
-  </p>
-
-  <p>
-    <textarea
-      style="width:100%"
-      name="translated"
-      readonly
-      rows="15"
-      wrap="logical"></textarea>
-  </p>
+<p><textarea style="width:100%" name="translatethis" rows="15" wrap="logical"></textarea>
+<input type="button" value="Translate!" onclick="translateText(document.translate.translatethis.value)"><br><br>
+</p>
+<p><textarea style="width:100%" name="translated" readonly="readonly" rows="15" wrap="logical"></textarea></p>
 </form>
 ```
 
@@ -168,22 +151,19 @@ This project intentionally mimics early internet writing styles and slang from a
 
 Some phrasing, tone, or stylistic choices may feel dated by modern standards. The script is presented for nostalgic and historical interest only, and is **not** an endorsement of any particular language, behavior, or stereotype.
 
----
 
 <a id="authors"></a>
 ## Authors
 
-* **Lucas Longley** (llongley@uvic.ca) — original script
-* **BryanH** (bryan@master-developer.com) — formatting and minor cleanup for preservation of v1; v2 refactoring
-    * ChatGPT 5.2 was involved in the development of this script. All AI-generated code was reviewed and tested by a human, then tweaked or edited as necessary. Feature definition is 100% human designed, so any feature shortcomings belong to the human author. Blame any buggy code on the LLM! Fight ✊ the power!
+## Roadmap Status
 
----
+* Per-acronym weights
 
-Have fun. Don’t take it too seriously. That’s the point.
+* Sentence-aware caps beyond 2
 
 <a id="cya"></a>
 ## CYA
 
-This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">.
+* Decay / forgiveness rules ✅ Implemented
 
-THE SOFTWARE IS PROVIDED "AS IS" AND, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, THERE IS NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, BY STATUTE OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR NON-INFRINGMENT. THERE IS NO GUARANTEE THE SOFTWARE WILL FUNCTION UNINTERRUPTED, THAT IT WILL MEET REQUIREMENTS OF ANY KIND, THAT IT IS ERROR-FREE, OR THAT ANY ERRORS WILL BE CORRECTED.
+[netdiag]:img/stateflow.svg

@@ -1,8 +1,15 @@
 {
-  "name": "Aol Translate",
-  "packageManager": "yarn@4.9.2",
-  "author": [],
-  "dependencies": {
-    "mermaid": "^11.12.2"
-  }
+    "name": "English to AOL Translator",
+    "author": "Bryanh <bryan@master-developer.com>",
+    "contributors": [
+        "Lucas Longley <llongley@uvic.ca>"
+    ],
+    "browser": "aol-translate.js",
+    "description": "Updated script, based upon functionality from ancient page, now with modern code and ease of maintenance",
+    "license": "CC-BY-4.0",
+    "packageManager": "yarn@4.9.2",
+    "verson": "2.0.0",
+    "dependencies": {
+        "mermaid": "^11.12.2"
+    }
 }

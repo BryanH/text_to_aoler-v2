@@ -5,14 +5,6 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"06@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "06@workspace:."
-  dependencies:
-    mermaid: "npm:^11.12.2"
-  languageName: unknown
-  linkType: soft
-
 "@antfu/install-pkg@npm:^1.1.0":
   version: 1.1.0
   resolution: "@antfu/install-pkg@npm:1.1.0"
@@ -384,6 +376,14 @@ __metadata:
   checksum: 10c0/4c4855f10de7c6c135e0d32ce462419d8abbbc33713b31d294596c0cc34ae1fa6112a2f9da729c8f7a20707782b0d69da3b1f8df6645b0366d08825ca1522e0c
   languageName: node
   linkType: hard
+
+"English to AOL Translator@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "English to AOL Translator@workspace:."
+  dependencies:
+    mermaid: "npm:^11.12.2"
+  languageName: unknown
+  linkType: soft
 
 "acorn@npm:^8.15.0":
   version: 8.15.0
